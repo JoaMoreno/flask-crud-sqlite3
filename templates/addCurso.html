@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block body %}
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<div class="col-md-4 mx-auto pt-4">
+    <div class="car-header p-6">
+        <form action="/create-task" method="POST">
+            <div class="form-group">
+                <input type="text" name="nombreCurso" placeholder="Nombre Curso" class="form-control"
+                    autofocus>
+                <input type="tex" name="descripcion" placeholder="Descripcion" class="form-control">
+                <input type="number" min="0" max="100" step="5" value="0" name="porcentaje" placeholder="porcentaje" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+                Save
+            </button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

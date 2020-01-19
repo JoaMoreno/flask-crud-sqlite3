@@ -1,0 +1,125 @@
+.container-cursos{
+    padding: 5%;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:    5%;
+    grid-column-gap:    5%;
+    list-style: none;
+}
+
+.card{
+    border-radius: 10px;
+    text-decoration: none;
+}
+.card-titulo{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 18px;
+    max-height: 50px;
+    padding: 20px 20px;
+    background: white;
+    color: rgb(57, 101, 248);
+}
+.card-descripcion{
+    font-size: 14px;
+    padding: 20px 10%;
+    display: grid;
+    overflow: hidden;
+}
+.color-blanco{
+    color: white;
+}
+.bg-primary{
+    background: rgb(57, 101, 248);
+}
+.dgrid{
+    display: grid;
+}
+.addbuttom{
+    width: 50px;
+    height: 50px;
+    background: rgb(28, 207, 183);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 32px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    
+}
+.buttonadd{
+    text-decoration: none;
+    color:white;
+}
+.btn-container{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+    padding: 10px;
+}
+.btn{
+    text-align: center;
+    display: grid;
+    align-content: center;
+    text-decoration: none;
+    color: white;
+    background: rgb(90, 148, 255);
+    width: 45%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.porcentaje{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
+}
+.porcentaje p{
+    padding-right: 12px;
+    font-weight: lighter;
+    font-size: 10px;
+}
+.completadotexto{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+.addp{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	align-items: flex-start;
+    align-content: space-between;
+
+}
+
+.btn-sm{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgb(28, 207, 183);
+    border-radius: 10px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/base.css">
+    
+    <title>App</title>
+</head>
+
+<body class="container-total">
+    <div class="navbar color-texto">
+        <h1 class="separacion-20">studio. LTE</h1>
+        <div class="botones-container">
+            <a href="" class="color-texto separacion-20 bg-hover">Notas</a>
+            <a href="/cursos" class="color-texto separacion-20 bg-hover">Cursos</a>
+            <a href="" class="color-texto separacion-20 bg-hover">Configuracion</a>
+        </div>
+    </div>
+    <div class="content">
+        {% block body %}
+        {% endblock %}
+    </div>
+    <script src="https://kit.fontawesome.com/ed8d5b1761.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

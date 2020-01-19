@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block body %}
+<head>
+    <link rel="stylesheet" href="../static/cursos.css">
+</head>
+<div class="addbuttom">
+    <a href="/cursos/add" class="buttonadd"><i class="fas fa-plus"></i></a>
+</div>
+<div class="">
+    <ul class="container-cursos">
+        {% for task in tasks %}
+        <li class="card bg-primary">
+            <span class="{% if task.done %} done {% endif %} card-titulo dgrid">{{task.nombreCurso}}</span>
+            <div class="">
+                <div class="card-descripcion">
+                    <p class="color-blanco">{{task.descripcion}}</p>
+                </div>
+                <div class="">
+                    <div class="porcentaje">
+                        <span class="dgrid completadotexto">
+                            <p>completado  </p> {{task.porcentaje}}%
+                        </span>
+                        <div class="addp">
+                            <a href="/addp/{{task.id}}" class="btn-sm"><i class="fas fa-angle-up"></i></a>
+                            <a href="/sustp/{{task.id}}" class="btn-sm"><i class="fas fa-angle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <a href="/done/{{task.id}}" class="btn"><i class="fas fa-check"></i></a>
+                <a href="/delete/{{task.id}}" class="btn"><i class="fas fa-times"></i></a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+
+{% endblock %}
